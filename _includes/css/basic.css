@@ -1,0 +1,91 @@
+/**
+ Normalise
+ ---
+
+ I'm only including reset rules where I actually need them
+ Rather than using a generic reset stylesheet
+*/
+body {
+    margin: 0;
+}
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ Basic elements
+ ===
+*/
+
+/**
+ Text
+ ---
+ - Basic font is sans-serif
+ - Make text it 20% larger than default
+ - Headings look better not bold
+ - Footer text is small
+ - Links underlined for usability
+ - Links have no hover state - it's annoying
+ - Link colour a more subtle blue than the default
+ */
+html {
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+footer>*, small {
+    font-size: 0.8em;
+}
+a, a:hover {
+    color: #66b;
+}
+a:visited {
+    color: #666;
+}
+
+/**
+ Spacing
+ ---
+ All containers:
+ - 43rem wide for readability
+ - centred in the page
+
+ Text elements (p, h*):
+ - 1em top spacing
+ - 1em left and right spacing
+
+ Container elements (header, section etc.)
+ - 1em bottom spacing
+
+ Navigation lists
+ - Horizontal
+*/
+h1, h2, h3, h4, p, nav {
+    max-width: 43rem;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, p {
+    padding: 1em 1rem 0 1rem;
+}
+header, footer, article {
+    padding: 0 0 1em 0;
+}
+header {
+    border-bottom: 1px solid #666;
+}
+footer {
+    border-top: 1px solid #666;
+}
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    float: left;
+    display: block;
+    padding: 1em 1em 0 0;
+}

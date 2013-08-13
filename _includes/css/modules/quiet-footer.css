@@ -1,0 +1,33 @@
+/**
+ Quiet footer
+ ---
+
+ A subtle footer with a light grey background,
+ and centralised navigational items
+ */
+.quiet-footer {
+    background-color: #eee;
+    color: #333;
+    border: none;
+}
+.quiet-footer nav {
+    text-align: center;
+}
+.quiet-footer nav li {
+    float: none;
+    display: inline-block;
+    margin: 1em 0 0 0;
+    padding: 0 3em;
+    border-left: 1px solid #ddd;
+}
+.quiet-footer li:first-child {
+    border-left: none;
+}
+@media (max-width: 50rem) {
+    .quiet-footer nav {
+        text-align: left;
+    }
+    .quiet-footer nav li {
+        padding: 0 1em;
+    }
+}

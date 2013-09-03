@@ -28,12 +28,11 @@ nav {
  */
 html {
     font-family: sans-serif;
-    font-size: 1.2em;
 }
 h1, h2, h3, h4 {
     font-weight: normal;
 }
-footer>*, small {
+footer, small {
     font-size: 0.8em;
 }
 a, a:hover {

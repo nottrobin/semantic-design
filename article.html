@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>A simple, elegant design for the web</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="basic.css" />
+    </head>
+
+    <body role="document">
+        <header role="banner" class="inline-header">
+            <h1>A simple, elegant design for the web</h1>
+
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Summary</a></li>
+                    <li><a href="details.html">Details</a></li>
+                    <li><a href="more.html">More</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main">
+            <article>
+                <h1 class="title">Design decisions in making the semantic design</h1>
+
+                <p>I called the design "semantic" because I really wanted everything to just make sense. It remains to be seen to what extend I've succeeded.</p>
+
+                <code class="bash"><span class="nv">$ </span>sublime-text _posts/2013-05-30-why-i-love-the-internet.md <span class="c"># create a new blog post</span>
+<span class="nv">$ </span>jekyll --server <span class="c"># build the static site into my _site/2013/05/30/why-i-love-the-internet.html directory and run a test server</span>
+<span class="c"># check the site and my new blog post look okay</span>
+<span class="nv">$ </span>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s1">'new post: why i love the internet'</span> <span class="c"># save it in version control</span>
+<span class="nv">$ </span>git push heroku <span class="c"># release the change to my live site (I use heroku)</span>
+</code>
+            </article>
+        </main>
+
+        <footer role="contentinfo" class="quiet-footer">
+            <nav>
+                <ul>
+                    <li>by <a href="http://robinwinslow.co.uk">robin</a></li>
+                    <li>this project is in the <a href="http://unlicense.org">public domain</a></li>
+                    <li>please <a href="https://github.com/nottrobin/basic-design">fork my code</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

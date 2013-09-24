@@ -1,0 +1,20 @@
+/**
+ Tagline
+ ---
+
+ A stand-out statement. Very large serif text.
+*/
+.tagline {
+    font-size: 3em;
+    font-family: serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.tagline small {
+    font-size: 0.6em;
+}
+@media (max-width: 43rem) {
+    .tagline {
+        font-size: 2em;
+    }
+}

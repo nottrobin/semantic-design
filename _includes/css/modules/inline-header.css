@@ -1,0 +1,27 @@
+/**
+ Inline header
+ ---
+
+ A central header, slightly wider than the text
+ with a faint underline. Serif text.
+
+ The navigation should be inline with the heading.
+*/
+.inline-header {
+    border-bottom: 1px solid #ddd;
+    max-width: 50rem;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: serif;
+}
+.inline-header h1 {
+    font-size: 1.4em;
+    float: left;
+}
+.inline-header nav {
+    float: right;
+    line-height: 1.4em;
+}
+.inline-header nav li {
+    padding: 1.5em 1em 0 1em;
+}

@@ -1,0 +1,63 @@
+/**
+ Promotions
+ ---
+
+ A set of promoted articles.
+
+ They arrange in three columns at the widest settings,
+ and responsively re-arrange themselves as the screen gets thinner.
+*/
+.promotions {
+    max-width: 50rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.promotions article {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33%;
+    min-width: 16.66em;
+    padding: 0 0.5em 1.5em 0.5em;
+    position: relative;
+    float: left;
+}
+.promotions article:nth-child(3n+1) {
+    clear: left;
+}
+.promotions article:after {
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border: 1px solid #ddd;
+}
+.promotions article:nth-child(3n+1):after {
+    display: none;
+}
+.promotions article h1 {
+    font-size: 1.6em;
+}
+@media (max-width: 50rem) {
+    .promotions article {
+        width: auto;
+        float: none;
+        clear: none;
+        padding: 0 0 1em 0;
+    }
+    .promotions article:after {
+        height: 0;
+        width: 50%;
+        border-bottom: 1px solid #ddd;
+        top: 0;
+        bottom: auto;
+        left: 3em;
+    }
+    .promotions article:nth-child(3n+1):after {
+        display: block;
+    }
+    .promotions article:first-child:after {
+        display: none;
+    }
+}

@@ -1,23 +1,17 @@
+---
+layout: default
+---
 
+<section class="news">
+    <h1>News</h1>
 
-            <section class="news">
-                <h1>News</h1>
-
-                <article>
-                    <h1>News item one</h1>
-
-                    <p>Some teaser text</p>
-                </article>
-
-                <article>
-                    <h1>News item two</h1>
-
-                    <p>Some more teaser text</p>
-                </article>
-
-                <article>
-                    <h1>News item three</h1>
-                    
-                    <p>Some further text</p>
-                </article>
-            </section>
+    {% for post in site.posts %}
+    <article>
+        <h1>{{ post.title }}</h1>
+        <date datetime="{{ post.date }}">{{ post.date | date_to_string }}</date>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </article>
+    {% endfor %}
+</section>

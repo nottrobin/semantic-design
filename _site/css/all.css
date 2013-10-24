@@ -1,15 +1,4 @@
 /**
- * Normalise
- *
- * I'm only including reset rules where I actually need them
- * Rather than using a generic reset stylesheet
- */
-body, nav, h1, h2, h3, h4, p {
-    margin: 0;
-    padding: 0;
-}
-
-/**
  Basic elements
  ===
 
@@ -49,12 +38,6 @@ section article h2, h3 {
 
 footer>*, small {
     font-size: 0.8em;
-}
-a, a:hover {
-    color: #66b;
-}
-a:visited {
-    color: #666;
 }
 
 /**

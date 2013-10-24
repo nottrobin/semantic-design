@@ -1,0 +1,8 @@
+/**
+ Simple layout
+ */
+body {
+  max-width: 43em;
+  padding: 1.5em;
+  margin-left: auto;
+  margin-right: auto; }

@@ -3,23 +3,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>A simple, elegant design for the web</title>
+        <title>{{ site.title }}</title>
 
+        <meta name="description" content="{{ site.description }}" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" href="favicon.ico" />
-        <link rel="stylesheet" href="{{ site.baseurl }}css/all.css" />
+        <link rel="stylesheet" href="/css/all.css" />
     </head>
 
     <body role="document">
-        <header role="banner" class="inline-header">
-            <h1>A simple, elegant design for the web</h1>
+        <header role="banner" class="site-header">
+            <h1>{{ site.title }}</h1>
 
             <nav role="navigation">
                 <ul>
-                    <li><a href="index.html">Summary</a></li>
-                    <li><a href="details.html">Details</a></li>
-                    <li><a href="more.html">More</a></li>
+            {% for page in site.pages %}
+                    <li><a href="{{ page.url }}">{{ page.name }}</a></li>
+            {% endfor %}
                 </ul>
             </nav>
         </header>
@@ -28,7 +29,7 @@
             {{ content }}
         </main>
 
-        <footer role="contentinfo" class="quiet-footer">
+        <footer role="contentinfo" class="site-footer">
             <nav>
                 <ul>
                     <li>by <a href="http://robinwinslow.co.uk">robin</a></li>

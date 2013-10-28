@@ -1,7 +1,7 @@
 <nav role="navigation">
     <ul>
-{% for item in items %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+{% for page in site.pages %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
     </ul>
 </nav>

@@ -1,0 +1,68 @@
+/**
+ Basic elements
+ ===
+ */
+
+/**
+ All text
+ - Open sans or sans
+ - 20% larger text
+*/
+html {
+    font-family: 'open sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+/**
+ - Text blocks have 1em of after-padding
+*/
+h1, h2, h3, h4, p, blockquote, ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+	padding-bottom: 1rem;
+}
+
+/**
+ Headings 
+ - normal weight (looks better)
+ - Alice or serif
+*/
+h1, h2, h3, h4 {
+    font-family: 'alice', serif;
+    font-weight: normal;
+    padding-top: 1em;
+}
+
+/* Sizes */
+h1 {
+	font-size: 2.6em;
+}
+h2, section h1 {
+	font-size: 2em;
+}
+h3, section h2, section section h1 {
+	font-size: 1.4em;
+}
+
+/**
+ Links:
+ - Underlined for usability
+ - Have no hover state - it's annoying
+ - Colour a more subtle blue than the default
+*/
+a, a:hover {
+    color: #66b;
+}
+a:visited {
+    color: #666;
+}
+
+/**
+ Modifiers
+*/
+small {
+	font-size: 0.8em;
+}
+
+

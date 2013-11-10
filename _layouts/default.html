@@ -14,7 +14,11 @@
 
     <body role="document">
         <header role="banner" class="site-header">
+            <img class="logo" src="http://i.imgur.com/EDfjam6.png" />
+
             <h1>{{ site.title }}</h1>
+
+            <img class="logo" width="200" src="http://younggreens.org.uk/assets/images/younggreen%20images/website%20logos/title-horizontal-white.png" />
 
             {% include navigation.html %}
         </header>
@@ -22,15 +26,5 @@
         <main role="main">
             {{ content }}
         </main>
-
-        <footer role="contentinfo" class="site-footer">
-            <nav>
-                <ul>
-                    <li>by <a href="http://robinwinslow.co.uk">robin</a></li>
-                    <li>this project is in the <a href="http://unlicense.org">public domain</a></li>
-                    <li>please <a href="https://github.com/nottrobin/basic-design">fork my code</a></li>
-                </ul>
-            </nav>
-        </footer>
     </body>
 </html>

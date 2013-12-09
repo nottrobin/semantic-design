@@ -1,9 +1,12 @@
 <nav role="navigation">
     <ul>
-{% for page in site.pages %}
-    {% if page.navtext %}
-        <li><a href="{{ page.url }}">{{ page.navtext }}</a></li>
-    {% endif %}
-{% endfor %}
+        <li><a href="/index.html" class="{% if page.url == '/index.html' %}current{% endif %}">Home</a></li>
+        <li><a href="/about.html" class="{% if page.url == '/about.html' %}current{% endif %}">About</a></li>
+        <li><a href="/resources.html" class="{% if page.url == '/resources.html' %}current{% endif %}">Resources</a></li>
+        <li><a href="/campuswatch.html" class="{% if page.url == '/campuswatch.html' %}current{% endif %}">Campus watch</a></li>
+        <li><a href="/join.html" class="{% if page.url == '/join.html' %}current{% endif %}">Join</a></li>
+        <li><a href="/news.html" class="{% if page.url == '/news.html' %}current{% endif %}">News</a></li>
+        <li><a href="/evidence.html" class="{% if page.url == '/evidence.html' %}current{% endif %}">Evidence</a></li>
+        <li><a href="/research.html" class="{% if page.url == '/research.html' %}current{% endif %}">Useful research</a></li>
     </ul>
 </nav>

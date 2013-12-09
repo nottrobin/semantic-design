@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "Fair Pay Now!"
 ---
+
+<h1 class="fancy">Fair pay campus!</h1>
 
 The campaign for Fair Pay on Campuses is the movement to reduce pay ratios between the highest and lowest paid workers in the HE sector across England and Wales. We want to encourage universities to consider a more equality based approach when remunerating their staff.
 

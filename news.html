@@ -3,7 +3,7 @@ layout: default
 title: News
 ---
 
-<h1>News</h1>
+<h1 class="title">News</h1>
 
 <section class="articles" role="region">
     {% for post in site.posts %}
@@ -12,15 +12,7 @@ title: News
 
         <p><date datetime="{{ post.date }}">{{ post.date | date_to_string }}</date></p>
 
-        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    
-        <p><a href="{{ post.url }}">
-        {% if post.linktext %}
-        	{{ post.linktext }}
-        {% else %}
-        	Read more about {{ post.title }}
-        {% endif %}
-        </a></p>
+        <p>{{ post.content }}</p>
     </article>
     {% endfor %}
 </section>

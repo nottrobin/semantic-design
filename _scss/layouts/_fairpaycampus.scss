@@ -2,9 +2,26 @@ html {
     background-color: #ec008b;
 }
 
-h1 {
+.fancy {
     text-transform: uppercase;
     font-family: "cabin sketch";
+}
+
+.title {
+    font-size: 2.2em;
+}
+
+h1, section h1 {
+    font-family: "open sans";
+    font-size: 1.5em;
+}
+
+date {
+    font-size: 0.8em;
+}
+
+li {
+    margin-bottom: 1em;
 }
 
 header {
@@ -18,18 +35,25 @@ header .logo {
     display: block;
     margin: 1em auto;
 }
-header h1 {
+header .fancy {
     font-size: 1.5em;
     text-align: center;
 }
+header nav {
+    padding-top: 1em;
+    font-size: 0.9em;
+}
 header nav ul {
-    margin: 1em -2em 0 -2em;
+    margin: 0 -2em;
     padding: 0;
     overflow: hidden;
+    background-color: black;
+    text-align: center;
+    color: white;
 }
 header nav li {
+    display: inline-block;
     margin: 0;
-    float: left;
     list-style-type: none;
 }
 header nav li a {
@@ -39,6 +63,9 @@ header nav li a {
     text-decoration: none;
     background-color: black;
 }
+header nav li a.current, header nav li a:visited.current {
+    color: white;
+}
 header nav li a:visited {
     color: #aaa;
 }
@@ -47,15 +74,23 @@ header nav li a:hover {
     background-color: #666;
 }
 
-article {
+main {
     background-color: white;
     max-width: 43em;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
     padding: 0 2em 1em 2em;
     overflow: hidden;
 }
-article h1 {
+article .fancy {
     color: #ec008b;
-    font-size: 3em;
+    font-size: 2.5em;
+}
+section article {
+    border-top: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+section article:first-child {
+    border-top: none;
 }

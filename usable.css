@@ -1,0 +1,34 @@
+/**
+Defaults:
+reading width: 35em;
+before-width: 12em;
+after-width: 12em;
+*/
+
+body {
+    margin: 0;
+}
+/*
+.usable-before-content, .usable-main-content, .usable-after-content {
+    max-width: 12em;
+    display: block;
+    float: left;
+}
+
+.usable-before-content {max-width: 12em;}
+.usable-main-content {max-width: 35em;}
+.usable-after-content {max-width: 12em;}
+*/
+@media (max-width: 59em) {
+    .narrow-stack-item {
+        display: block !important;
+        float: none !important;
+        max-width: 100% !important;
+        width: auto !important;
+    }
+    .narrow-expand-item {
+        display: block !important;
+        float: left !important;
+    }
+    ul .narrow-expand-item {list-style-type: none !important;}
+}

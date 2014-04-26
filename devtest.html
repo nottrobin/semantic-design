@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+    <title>Usable layout</title>
+    
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<style>
+		
+    	body {font-size: 100%;}
+			div p {
+					padding: 10px;
+					margin: 0;
+			}
+			div.usable-before-content {background-color: green;}
+			div.usable-main-content {background-color: red;}
+			div.usable-after-content {background-color: orange;}
+			
+			div.nav {
+				float: left;
+				width: 100%;
+				clear: both;
+			}
+			
+			h2 {padding: 5px 0;}
+			ul {
+					padding: 0;
+					margin: 0;
+			}
+			
+			ul.horizontal {
+					float: left;
+					width: 100%;
+					clear: both;
+					list-style-type: none;
+			}
+			ul.horizontal li {float: left;}
+			
+			.usable-before-content, .usable-main-content, .usable-after-content {
+					max-width: 12em;
+					display: block;
+					float: left;
+			}
+			
+			.usable-before-content {width: 12em;}
+			.usable-main-content {max-width: 35em;}
+			.usable-after-content {width: 12em;}
+		</style>
+		
+    <link rel="stylesheet" media="handheld, screen" href="usable.css" />
+  </head>
+  
+  <body>
+		<div id="nav">
+			<ul class="horizontal">
+				<li class="narrow-stack-item">Item one</li>
+				<li class="narrow-stack-item">I2</li>
+				<li class="narrow-stack-item">item 3</li>
+			</ul>
+		</div>
+		
+		<div class="usable-before-content narrow-stack-item">
+			<h2>Pre content</h2>
+			<p>hello world this is robin. I'm a developer.</p>
+			<ul>
+				<li>Item one</li>
+				<li>I2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+		
+		<div class="usable-main-content narrow-stack-item">
+			<p>
+		"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+		</div>
+		
+		<div class="usable-after-content narrow-stack-item">
+			<h2>Post content</h2>
+			<p>hello world this is robin. I'm a developer.</p>
+			<ul>
+				<li>Item one</li>
+				<li>I2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+  </body>
+</html>

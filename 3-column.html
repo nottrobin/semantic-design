@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>Usable layout</title>
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->		
+    
+    <link  href="http://yui.yahooapis.com/2.8.2r1/build/reset/reset-min.css" rel="stylesheet" />
+    <link  href="http://yui.yahooapis.com/2.8.2r1/build/base/base-min.css" rel="stylesheet" />
+    <link  href="html5reset.css" rel="stylesheet" />
+		
+    <style media="handheld, screen, tv">
+			<!--
+				/* Content styling *
+				 *-----------------*/
+				body {
+						line-height: 1.5em;
+            font-size: 100%;
+						font-family: calibri;
+				}
+				p, h1, h2 {margin-bottom: 1em;}
+				h1 {font-size: 2em;}
+				h2, aside h1 {font-size: 1.3em;}
+				h1, h2, h3, h4 {font-family: cambria;}
+				li {margin-bottom: 0.5em;}
+				a, a:visited, a:active {
+						cursor: pointer;
+						color: #999;
+				}
+				a:hover {
+						border-bottom: 1px dotted black;
+						color: black;
+				}
+				aside#postblock a:hover, aside#preblock a:hover {
+						color: #fff;
+						border-color: white;
+				}
+				
+				/* Layout *
+				 *--------*/
+        body {
+            text-align: center;
+            background-color: #ddd;
+        }
+				body * {text-align: left;}
+
+				div#top {
+						background-color: black;
+						height: 6.8em;
+						margin-bottom: -6.8em;
+				}
+				div#container {display: inline-block;}
+
+				header {
+						background-color: black;
+						margin-bottom: 1em;
+						max-width: 61em;
+						min-height: 6.8em;
+						color: white;
+				}
+				header h1 {
+						margin: 0;
+						padding: 1em 0.5em;
+						font-size: 2.5em;
+				}
+
+				nav {
+						margin-bottom: 0.5em;
+				}
+				nav ul {text-align: center;}
+				nav ul * {text-align: left;}
+				nav li {
+						display: inline-block;
+						background-color: #666;
+						color: white;
+						padding: 0.5em;
+						margin: 0 0.5em 0.5em 0.5em;
+				}
+				nav li.active, nav li:hover {
+						background-color: #fff;
+						color: inherit;
+						cursor: pointer;
+				}
+
+				section#content {
+						padding: 0 0.5em;
+						display: inline-block;
+						clear: both;
+				}
+				section#topbar {
+						background-color: orange;
+						color: white;
+						padding: 0.5em;
+						margin: 0 0.5em 1em 0.5em;
+				}
+
+				aside#preblock, aside#postblock {
+						float: left;
+						width: 12em;
+				}
+				aside#preblock section, aside#postblock section {
+						background-color: #333;
+						color: white;
+						padding: 1em;
+						margin: 0 0.5em 1em 0.5em;
+				}
+				section#main {
+						background-color: #fff;
+						max-width: 35em;
+						padding: 1.5em 1.5em 0 1.5em;
+						float: left;
+						margin: 0 0.5em 1em 0.5em;
+						overflow: auto;
+				}
+				section#main h1 {
+						font-size: 2em;
+						margin-bottom: 1em;
+				}
+
+				footer {
+						padding: 1em;
+						background-color: grey;
+						color: white;
+				}
+
+				div#bottom {
+						height: 3.5em;
+						margin-top: -3.5em;
+						background-color: grey;
+				}
+
+				div.bracket {float: left;}
+
+				@media (max-width: 64em) {
+						aside#preblock {
+								float: none;
+								width: auto;
+								text-align: center;
+						}
+						aside#preblock section h1 {
+								display: inline-block;
+								border-right: 1px solid white;
+								margin: 0 20px 0 0;
+								padding-right: 20px;
+						}
+						aside#preblock p {
+								display: inline-block;
+								margin: 0 15px 0 0;
+						}
+				}
+
+				@media all and (max-width: 52em) {
+						section#main {float: none;}
+						aside#postblock {
+								float: none;
+								width: auto;
+						}
+						aside#postblock section#account p, aside#postblock section#related li {
+								display: inline-block;
+								margin: 0 20px 0 0;
+						}
+				}
+			-->
+    </style>
+  </head>
+  
+  <body>
+    <div id="top"></div>
+    
+    <div id="container">
+      <header>
+        <h1>Site title</h1>
+      </header>
+      
+      <nav>
+        <ul>
+          <li class="active">Page one</li>
+          <li>Page two</li>
+          <li>Page three</li>
+          <li>Page four</li>
+          <li>Page five</li>
+        </ul>
+      </nav>
+      
+      <section id="content">
+      
+        <!--<section id="topbar">Notifications...</section>-->
+        
+        <aside id="preblock">
+          <section id="account">
+            <h1>Account</h1>
+            <p><strong>Logged in as:</strong> Phil</p>
+            <p><a>View account</a></p>
+          </section>
+        </aside>
+        
+        <div class="bracket">
+          <section id="main">
+            <h1>Lorem ipsum</h1>
+            <p>Following is a bunch of information about the Lorem Ipsum text, which is regularly used as place-holder copy in media designs. The following was lifted directly from <a href="http://lipsum.com/">lipsum.com</a>.</p>
+            
+            <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            
+            <h2>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h2>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+          </section>
+          
+          <aside id="postblock">
+            <section id="related">
+              <h1>Related articles</h1>
+              <ul>
+                <li><a>At vero eos et</a></li>
+                <li><a>accusamus et iusto</a></li>
+                <li><a>odio dignissimos</a></li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+        
+      </section>
+      
+      <footer>&copy; Copyright someone 2010</footer>
+    </div>
+    
+    <div id="bottom"></div>
+  </body>
+</html>
